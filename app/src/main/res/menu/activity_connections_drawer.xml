@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/drawer_action_connections"
+            android:icon="@drawable/ic_databse"
+            android:title="@string/drawer_connections"/>
+        <item android:id="@+id/drawer_action_addConnection"
+            android:icon="@drawable/ic_add"
+            android:title="@string/drawer_add_connection"/>
+        <item android:id="@+id/drawer_action_settings"
+            android:icon="@drawable/ic_gear"
+            android:title="@string/drawer_setting"/>
+        <item android:id="@+id/drawer_action_github"
+            android:icon="@drawable/ic_github"
+            android:title="@string/drawer_github"/>
+
+    </group>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/drawer_action_about"
+                android:icon="@drawable/ic_right_arrow"
+                android:title="@string/drawer_about"/>
+            <item android:id="@+id/drawer_action_contact_me"
+                android:icon="@drawable/ic_contact"
+                android:title="@string/drawer_contact_me"/>
+        </menu>
+    </item>
+
+</menu>
