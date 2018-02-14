@@ -22,6 +22,14 @@
         <activity
             android:name=".ConnectionsActivity"
             android:label="@string/title_activity_connections"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".AboutMeActivity"
+            android:label="@string/title_activity_about_me"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ContactMeActivity"
+            android:label="@string/title_activity_contact_me"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

@@ -1,0 +1,4 @@
+#Wed Feb 14 16:19:51 CST 2018
+base.0=/home/dhy/Develop/FascinatingManager/app/build/intermediates/transforms/dexMerger/debug/3
+path.0=classes.dex
+renamed.0=classes.dex

@@ -1,8 +1,13 @@
 package science.denghaoyu.fascinatingmanager;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v7.app.AlertDialog;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -13,9 +18,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import science.denghaoyu.fascinatingmanager.application.GlobalVariables;
+import science.denghaoyu.fascinatingmanager.fragments.AddConnectionFragment;
+import science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment;
+
 public class ConnectionsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
+    private int selectedItem = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +47,7 @@ public class ConnectionsActivity extends AppCompatActivity
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
+            super.onBackPressed();
         } else {
             super.onBackPressed();
         }
@@ -54,7 +64,7 @@ public class ConnectionsActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.action_settings) {
-            return true;
+            //TODO
         }
 
         return super.onOptionsItemSelected(item);
@@ -65,10 +75,38 @@ public class ConnectionsActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {//drawer
         // Handle navigation view item clicks here.
         int id = item.getItemId();
-
+        if(id==R.id.drawer_action_about){
+            Intent intent = new Intent(this,AboutMeActivity.class);
+            startActivity(intent);
+        }else if(id==R.id.drawer_action_addConnection){
+            Fragment fragment = GlobalVariables.fragments.get("AddConnectionFragment");
+            if(fragment == null){
+                fragment = new AddConnectionFragment();
+                GlobalVariables.fragments.put("AddConnectionFragment",fragment);
+            }
+            addFragment(fragment);
+        }else if(id == R.id.drawer_action_contact_me){
+            Intent intent = new Intent(this,ContactMeActivity.class);
+            startActivity(intent);
+        }else if(id == R.id.drawer_action_connections){
+            Fragment fragment = GlobalVariables.fragments.get("ConnectionsFragment");
+            if(fragment==null){
+                fragment = new ConnectionsFragment();
+                GlobalVariables.fragments.put("ConnectionFragment",fragment);
+            }
+            addFragment(fragment);
+        }
         //TODD
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+    private void addFragment(Fragment fragment){
+        FragmentManager manager = getSupportFragmentManager();
+        FragmentTransaction transaction = manager.beginTransaction();
+        transaction.replace(R.id.content_connections_layout,fragment);
+        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+//        transaction.addToBackStack(null);
+        transaction.commit();
     }
 }

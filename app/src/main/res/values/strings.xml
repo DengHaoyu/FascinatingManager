@@ -13,6 +13,23 @@
     <string name="drawer_contact_me">Contact Me</string>
     <string name="drawer_connections">Connections</string>
 
+
+    <string name="add_connection_text_of_name_label">Name:</string>
+    <string name="add_connection_text_of_comment_label">Comment:</string>
+    <string name="add_connection_text_of_address_label">Address:</string>
+    <string name="add_connection_text_of_user_label">User:</string>
+    <string name="add_connection_text_of_password_label">Password:</string>
+    <!--hints-->
+    <string name="add_connection_hint_of_comment">Enter a brief comment</string>
+    <string name="add_connection_hint_of_name">Enter your name here</string>
+    <string name="add_connection_hint_of_user">Enter user</string>
+    <string name="add_connection_hint_of_address">Enter address</string>
+    <string name="add_connection_hint_of_password">Enter password</string>
+    <string name="test">test</string>
+    <string name="confirm">confirm</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_about_me">AboutMeActivity</string>
+    <string name="title_activity_contact_me">Contact Me</string>
+    <string name="port">port</string>
 </resources>

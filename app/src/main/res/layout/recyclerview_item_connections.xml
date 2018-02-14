@@ -2,46 +2,67 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_round_corner"
+    android:paddingTop="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="5dp"
     android:orientation="horizontal">
-
-    <TextView
-        android:id="@+id/recycleview_item_connections_firstletter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <FrameLayout
+        android:layout_width="0dp"
         android:layout_weight="2"
-        android:textSize="30dp"
-        android:fontFamily="@font/swiss911"
-        android:text="" />
+        android:layout_gravity="center"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:id="@+id/recycleview_item_connections_firstletter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30dp"
+            android:textColor="#000000"
+            android:fontFamily="@font/fffphant"
+            android:text="A" />
+    </FrameLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="6"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="6dp"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/recycleview_item_connections_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
+            android:layout_weight="3"
+            android:textColor="#000000"
+            android:textSize="30dp"
+            android:fontFamily="@font/swiss911"
+            android:text="Name" />
 
         <TextView
             android:id="@+id/recycleview_item_connections_comment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="" />
-        <TextView
-            android:id="@+id/recycleview_item_connections_date"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:textColor="#999999"
+            android:layout_weight="5"
+            android:text="CommentCommentCommentCommentCommentCommentCommentCommentCommentCommentCommentCommentCommentComment"
             />
+
     </LinearLayout>
     <CheckBox
         android:id="@+id/recycleview_item_connections_checkBox"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:gravity="center"
         android:visibility="gone"
+        android:layout_gravity="center"
         android:layout_weight="1" />
+
 
 </LinearLayout>

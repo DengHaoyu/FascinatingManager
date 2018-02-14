@@ -12,20 +12,22 @@ import java.util.Date;
  */
 
 public class ConnectionItem extends DataSupport implements Serializable{
-    private char firstLetter;
+
+    private String firstLetter;//NEVER USE CHAR BECAUSE OF CHINESE CHARACTERS
     private Date createDate;
     private String connectionName;
     private String address;
     private int port;
+    private String user;
     private String comment;
+    private String password;
 
-
-    public char getFirstLetter() {
+    public String getFirstLetter() {
         return firstLetter;
     }
 
-    public void setFirstLetter(char beginLetter) {
-        this.firstLetter = beginLetter;
+    public void setFirstLetter(String firstLetter) {
+        this.firstLetter = firstLetter;
     }
 
     public Date getCreateDate() {
@@ -60,6 +62,14 @@ public class ConnectionItem extends DataSupport implements Serializable{
         this.port = port;
     }
 
+    public String getUser() {
+        return user;
+    }
+
+    public void setUser(String user) {
+        this.user = user;
+    }
+
     public String getComment() {
         return comment;
     }
@@ -68,6 +78,11 @@ public class ConnectionItem extends DataSupport implements Serializable{
         this.comment = comment;
     }
 
+    public String getPassword() {
+        return password;
+    }
 
-
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }

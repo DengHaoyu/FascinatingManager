@@ -1,0 +1,15 @@
+#Internal package file, do not edit.
+#Wed Feb 14 17:32:41 CST 2018
+1.base=/home/dhy/Develop/FascinatingManager/app/build/intermediates/assets/debug
+2.path=aboutme.html
+0.baseType=DIRECTORY
+2.base=/home/dhy/Develop/FascinatingManager/app/build/intermediates/assets/debug
+2.set=ASSET
+1.baseType=DIRECTORY
+count=3
+1.set=ASSET
+0.path=litepal.xml
+0.set=ASSET
+0.base=/home/dhy/Develop/FascinatingManager/app/build/intermediates/assets/debug
+2.baseType=DIRECTORY
+1.path=fmcontactMe.html

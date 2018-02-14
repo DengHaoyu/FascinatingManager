@@ -1,6 +1,7 @@
 package science.denghaoyu.fascinatingmanager.adapter;
 
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,14 +23,12 @@ public class ConnectionsRecyclerAdapter extends RecyclerView.Adapter<Connections
         TextView firstLetter;
         TextView name;
         TextView comment;
-        TextView date;
         CheckBox checkBox;
         public Holder(View view) {
             super(view);
             this.firstLetter = (TextView)view.findViewById(R.id.recycleview_item_connections_firstletter);
             this.name = (TextView)view.findViewById(R.id.recycleview_item_connections_name);
             this.comment = (TextView)view.findViewById(R.id.recycleview_item_connections_comment);
-            this.date = (TextView)view.findViewById(R.id.recycleview_item_connections_date);
             this.checkBox = (CheckBox)view.findViewById(R.id.recycleview_item_connections_checkBox);
         }
     }
@@ -37,6 +36,7 @@ public class ConnectionsRecyclerAdapter extends RecyclerView.Adapter<Connections
         this.connections = items;
     }
     @Override
+
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_item_connections,parent,false);
         Holder holder = new Holder(view);
@@ -49,12 +49,13 @@ public class ConnectionsRecyclerAdapter extends RecyclerView.Adapter<Connections
         holder.firstLetter.setText(item.getFirstLetter()+"");
         holder.name.setText(item.getConnectionName());
         holder.comment.setText(item.getComment());
-        holder.date.setText(new SimpleDateFormat("dd/MM/YYYY").format(item.getCreateDate()));
     }
 
     @Override
     public int getItemCount() {
+        Log.d("ASD",this.connections.size()+" ");
         return this.connections.size();
+
     }
 
 
