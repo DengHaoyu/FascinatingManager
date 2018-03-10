@@ -11,8 +11,7 @@
 
     <fragment
         android:id="@+id/activity_connections_main_fragment"
-        android:name="science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_connections" />
+        android:name="science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment"/>
 </android.support.constraint.ConstraintLayout>

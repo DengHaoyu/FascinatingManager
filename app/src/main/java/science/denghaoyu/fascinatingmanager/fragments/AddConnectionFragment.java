@@ -104,13 +104,15 @@ public class AddConnectionFragment extends Fragment {
             task.execute(item);
             try {
                 if(task.get().booleanValue()){
-                    Toast.makeText(FMApplication.getContext(),"Congratulations!The Connection is valid!",Toast.LENGTH_SHORT);
+                    Toast.makeText(FMApplication.getContext(),"Congratulations!The Connection is valid!",Toast.LENGTH_SHORT).show();
                 }else{
-                    Toast.makeText(FMApplication.getContext(),"Unfortunately,the connection is invalid:-(",Toast.LENGTH_SHORT);
+                    Toast.makeText(FMApplication.getContext(),"Unfortunately,the connection is invalid:-(",Toast.LENGTH_SHORT).show();
                 }
             } catch (InterruptedException e) {
+                Toast.makeText(FMApplication.getContext(),"Exception occurred at AddConnectionFragment\n Please report on github,sorry for this",Toast.LENGTH_SHORT);
                 Log.e(TAG,e.getMessage());
             } catch (ExecutionException e) {
+                Toast.makeText(FMApplication.getContext(),"Exception occurred at AddConnectionFragment\nPlease report on github, sorry for this",Toast.LENGTH_SHORT);
                 Log.e(TAG,e.getMessage());
             }
         }

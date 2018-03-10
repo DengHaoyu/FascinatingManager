@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
 MERGED from [com.android.support:design:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ce4507f9fe6455cdcd7e1ad9b70dcb80/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/96f0791b27e0184ad3b836092628551b/AndroidManifest.xml:17:1-31:12
 MERGED from [org.litepal.android:core:1.4.1] /home/dhy/.gradle/caches/transforms-1/files-1.1/core-1.4.1.aar/7a1fa2659880c441084fb45759d7e980/AndroidManifest.xml:2:1-16:12
@@ -19,25 +19,25 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /home/dhy/.gradle/ca
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/a02e93e4c0c2a31a84a3c81066f2c47d/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b132c0a53c41c6b5070b7f8fba4ba1f7/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/6cb4868c4cd139c36ce7818f29207741/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
-		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
-		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-36:12
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-37:12
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:5:5-34:19
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:5:5-35:19
 MERGED from [com.android.support:design:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ce4507f9fe6455cdcd7e1ad9b70dcb80/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ce4507f9fe6455cdcd7e1ad9b70dcb80/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/96f0791b27e0184ad3b836092628551b/AndroidManifest.xml:25:5-29:19
@@ -115,13 +115,17 @@ ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:27:13-44
 activity#science.denghaoyu.fascinatingmanager.ContactMeActivity
-ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:30:9-33:68
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:30:9-33:59
 	android:label
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:32:13-62
 	android:theme
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:33:13-56
 	android:name
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:31:13-46
+activity#science.denghaoyu.fascinatingmanager.ManageDatabaseActivity
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:34:9-69
+	android:name
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:34:19-57
 uses-sdk
 INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml

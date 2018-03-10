@@ -8,6 +8,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AlertDialog;
+import android.util.Log;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -28,6 +29,7 @@ public class ConnectionsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_connections);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -40,6 +42,7 @@ public class ConnectionsActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
     }
 
     @Override
@@ -104,9 +107,8 @@ public class ConnectionsActivity extends AppCompatActivity
     private void addFragment(Fragment fragment){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.content_connections_layout,fragment);
-        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-//        transaction.addToBackStack(null);
-        transaction.commit();
+        transaction.replace(R.id.activity_connections_main_fragment,fragment)
+                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
+//        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
     }
 }
