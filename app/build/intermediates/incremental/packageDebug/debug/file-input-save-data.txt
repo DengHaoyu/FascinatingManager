@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Feb 14 17:32:41 CST 2018
+#Sun Mar 11 11:39:01 CST 2018
 4.path=classes.dex
 8.set=ASSET
 6.path=litepal.xml

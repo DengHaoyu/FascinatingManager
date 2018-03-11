@@ -9,9 +9,4 @@
     tools:context="science.denghaoyu.fascinatingmanager.ConnectionsActivity"
     tools:showIn="@layout/app_bar_connections">
 
-    <fragment
-        android:id="@+id/activity_connections_main_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:name="science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment"/>
 </android.support.constraint.ConstraintLayout>

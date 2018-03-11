@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Wed Feb 14 17:32:41 CST 2018
+#Sun Mar 11 11:38:59 CST 2018
 1.base=/home/dhy/Develop/FascinatingManager/app/build/intermediates/assets/debug
 2.path=aboutme.html
 0.baseType=DIRECTORY

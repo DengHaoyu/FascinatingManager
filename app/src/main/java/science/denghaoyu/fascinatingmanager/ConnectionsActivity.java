@@ -26,6 +26,7 @@ import science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment;
 public class ConnectionsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private int selectedItem = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,7 +43,12 @@ public class ConnectionsActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
+        Fragment fragment = GlobalVariables.fragments.get("ConnectionsFragment");
+        if(fragment==null){
+            fragment = new ConnectionsFragment();
+            GlobalVariables.fragments.put("ConnectionFragment",fragment);
+        }
+        addFragment(fragment);
     }
 
     @Override
@@ -107,7 +113,7 @@ public class ConnectionsActivity extends AppCompatActivity
     private void addFragment(Fragment fragment){
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
-        transaction.replace(R.id.activity_connections_main_fragment,fragment)
+        transaction.replace(R.id.content_connections_layout,fragment)
                 .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
 //        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
     }

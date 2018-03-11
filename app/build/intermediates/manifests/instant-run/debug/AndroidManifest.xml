@@ -39,6 +39,7 @@
             android:name="science.denghaoyu.fascinatingmanager.ContactMeActivity"
             android:label="@string/title_activity_contact_me"
             android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="science.denghaoyu.fascinatingmanager.ManageDatabaseActivity" />
 
         <meta-data
             android:name="android.support.VERSION"
