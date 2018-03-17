@@ -22,6 +22,7 @@
         <activity
             android:name=".ConnectionsActivity"
             android:label="@string/title_activity_connections"
+            android:windowSoftInputMode="adjustPan"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutMeActivity"
@@ -31,7 +32,12 @@
             android:name=".ContactMeActivity"
             android:label="@string/title_activity_contact_me"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".ManageDatabaseActivity"></activity>
+        <activity android:name=".ManageDatabaseActivity">
+            <intent-filter>
+                <action android:name="denghaoyu.fascinationmanager.managedatabase"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

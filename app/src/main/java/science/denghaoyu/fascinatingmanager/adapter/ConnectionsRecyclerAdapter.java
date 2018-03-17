@@ -1,5 +1,6 @@
 package science.denghaoyu.fascinatingmanager.adapter;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -10,6 +11,8 @@ import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+
+import science.denghaoyu.fascinatingmanager.FMApplication;
 import science.denghaoyu.fascinatingmanager.R;
 import science.denghaoyu.fascinatingmanager.datastore.ConnectionItem;
 
@@ -39,7 +42,20 @@ public class ConnectionsRecyclerAdapter extends RecyclerView.Adapter<Connections
 
     public Holder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_item_connections,parent,false);
-        Holder holder = new Holder(view);
+        final Holder holder = new Holder(view);
+        View.OnClickListener listener = new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int position = holder.getAdapterPosition();
+                ConnectionItem conn = ConnectionsRecyclerAdapter.this.connections.get(position);
+                Intent intent = new Intent("denghaoyu.fascinationmanager.managedat");
+                intent.putExtra("ConnectionItem",conn);
+                FMApplication.getContext().startActivity(intent);
+            }
+        };
+        holder.name.setOnClickListener(listener);
+        holder.comment.setOnClickListener(listener);
+        holder.firstLetter.setOnClickListener(listener);
         return holder;
     }
 
@@ -53,7 +69,6 @@ public class ConnectionsRecyclerAdapter extends RecyclerView.Adapter<Connections
 
     @Override
     public int getItemCount() {
-        Log.d("ASD",this.connections.size()+" ");
         return this.connections.size();
 
     }
