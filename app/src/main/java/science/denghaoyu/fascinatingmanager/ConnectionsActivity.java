@@ -23,6 +23,8 @@ import science.denghaoyu.fascinatingmanager.application.GlobalVariables;
 import science.denghaoyu.fascinatingmanager.fragments.AddConnectionFragment;
 import science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment;
 
+import static science.denghaoyu.fascinatingmanager.R.id.content_connections_layout;
+
 public class ConnectionsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private int selectedItem = 0;
@@ -105,7 +107,7 @@ public class ConnectionsActivity extends AppCompatActivity
             }
             addFragment(fragment);
         }
-        //TODD
+        //TODo
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
@@ -114,7 +116,10 @@ public class ConnectionsActivity extends AppCompatActivity
         FragmentManager manager = getSupportFragmentManager();
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.content_connections_layout,fragment)
-                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE).commit();
+                .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
+//        transaction.addToBackStack(null);
+        transaction.commit();
+
 //        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
     }
 }

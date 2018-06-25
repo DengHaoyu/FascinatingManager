@@ -19,6 +19,9 @@ import science.denghaoyu.fascinatingmanager.R;
 
 public class TableListRecyclerViewAdapter extends RecyclerView.Adapter {
     private List<String> tableNames = null;
+    public TableListRecyclerViewAdapter(List<String> tables){
+        this.tableNames = tables;
+    }
     private static class Holder extends RecyclerView.ViewHolder{
         TextView textView;
         public Holder(View itemView) {
@@ -29,7 +32,7 @@ public class TableListRecyclerViewAdapter extends RecyclerView.Adapter {
 
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_item_table_list,parent,false)
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recyclerview_item_table_list,parent,false);
         Holder vh = new Holder(view);
         return vh;
     }
@@ -43,12 +46,4 @@ public class TableListRecyclerViewAdapter extends RecyclerView.Adapter {
     public int getItemCount() {
         return tableNames.size();
     }
-}
-class OnScollListener extends RecyclerView.OnScrollListener{
-    private RecyclerView.LayoutManager layoutManager;
-    private int loaded = 0;
-    private int perviousToal = 0;
-    private int visiableCount = 0;
-    private int firstVisiable = 0;
-    private boolean isLoading = true;
 }

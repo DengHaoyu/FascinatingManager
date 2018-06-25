@@ -158,9 +158,9 @@ public class AddConnectionFragment extends Fragment {
         public void afterTextChanged(Editable s) {
             if(!s.toString().equals("")){
                 if(s.toString().charAt(0)<=127)//ascii set
-                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0)+"");
+                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0));
                 else if(s.toString().length()>=2){
-                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0)+""+s.toString().charAt(1));
+                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0));
                 }else{
                     AddConnectionFragment.this.firstLetter.setText("N/A");
                 }

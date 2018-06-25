@@ -1,13 +1,13 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
 MERGED from [com.android.support:design:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ce4507f9fe6455cdcd7e1ad9b70dcb80/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/96f0791b27e0184ad3b836092628551b/AndroidManifest.xml:17:1-31:12
 MERGED from [org.litepal.android:core:1.4.1] /home/dhy/.gradle/caches/transforms-1/files-1.1/core-1.4.1.aar/7a1fa2659880c441084fb45759d7e980/AndroidManifest.xml:2:1-16:12
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b1077fef62c89f9ae2f48e0e0951169c/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/89f0f67328631d97145ac6c11ae60b18/AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:transition:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/6708229722e12646e3e683bf9567af30/AndroidManifest.xml:17:1-28:12
 MERGED from [com.android.support:support-v4:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2f131d0ef8cb21f1272eb9bb6d1ee32f/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/823cae062409eb464e0e342dc1897b73/AndroidManifest.xml:17:1-28:12
@@ -19,33 +19,33 @@ MERGED from [com.android.support:support-core-utils:26.1.0] /home/dhy/.gradle/ca
 MERGED from [com.android.support:support-core-ui:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/a02e93e4c0c2a31a84a3c81066f2c47d/AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/b132c0a53c41c6b5070b7f8fba4ba1f7/AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/6cb4868c4cd139c36ce7818f29207741/AndroidManifest.xml:17:1-30:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
-INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
+INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:3:5-51
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
-		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
-		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-38:12
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:1-43:12
 		INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:5:5-36:19
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:5:5-41:19
 MERGED from [com.android.support:design:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ce4507f9fe6455cdcd7e1ad9b70dcb80/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:design:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/ce4507f9fe6455cdcd7e1ad9b70dcb80/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/96f0791b27e0184ad3b836092628551b/AndroidManifest.xml:25:5-29:19
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/96f0791b27e0184ad3b836092628551b/AndroidManifest.xml:25:5-29:19
 MERGED from [org.litepal.android:core:1.4.1] /home/dhy/.gradle/caches/transforms-1/files-1.1/core-1.4.1.aar/7a1fa2659880c441084fb45759d7e980/AndroidManifest.xml:11:5-14:19
 MERGED from [org.litepal.android:core:1.4.1] /home/dhy/.gradle/caches/transforms-1/files-1.1/core-1.4.1.aar/7a1fa2659880c441084fb45759d7e980/AndroidManifest.xml:11:5-14:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b1077fef62c89f9ae2f48e0e0951169c/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b1077fef62c89f9ae2f48e0e0951169c/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/89f0f67328631d97145ac6c11ae60b18/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/89f0f67328631d97145ac6c11ae60b18/AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:transition:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/6708229722e12646e3e683bf9567af30/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:transition:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/6708229722e12646e3e683bf9567af30/AndroidManifest.xml:22:5-26:19
 MERGED from [com.android.support:support-v4:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2f131d0ef8cb21f1272eb9bb6d1ee32f/AndroidManifest.xml:25:5-29:19
@@ -125,9 +125,19 @@ ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
 	android:name
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:32:13-46
 activity#science.denghaoyu.fascinatingmanager.ManageDatabaseActivity
-ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:35:9-69
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:35:9-40:20
 	android:name
 		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:35:19-57
+intent-filter#android.intent.category.DEFAULT+denghaoyu.fascinationmanager.managedatabase
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:36:13-39:29
+action#denghaoyu.fascinationmanager.managedatabase
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:37:17-85
+	android:name
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:37:25-83
+category#android.intent.category.DEFAULT
+ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:38:17-75
+	android:name
+		ADDED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml:38:27-73
 uses-sdk
 INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/dhy/Develop/FascinatingManager/app/src/main/AndroidManifest.xml
@@ -138,8 +148,8 @@ MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/t
 MERGED from [com.android.support:appcompat-v7:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/96f0791b27e0184ad3b836092628551b/AndroidManifest.xml:21:5-23:78
 MERGED from [org.litepal.android:core:1.4.1] /home/dhy/.gradle/caches/transforms-1/files-1.1/core-1.4.1.aar/7a1fa2659880c441084fb45759d7e980/AndroidManifest.xml:7:5-9:41
 MERGED from [org.litepal.android:core:1.4.1] /home/dhy/.gradle/caches/transforms-1/files-1.1/core-1.4.1.aar/7a1fa2659880c441084fb45759d7e980/AndroidManifest.xml:7:5-9:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b1077fef62c89f9ae2f48e0e0951169c/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/b1077fef62c89f9ae2f48e0e0951169c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/89f0f67328631d97145ac6c11ae60b18/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /home/dhy/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.0.2.aar/89f0f67328631d97145ac6c11ae60b18/AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:transition:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/6708229722e12646e3e683bf9567af30/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/6708229722e12646e3e683bf9567af30/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v4:26.1.0] /home/dhy/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/2f131d0ef8cb21f1272eb9bb6d1ee32f/AndroidManifest.xml:21:5-23:54

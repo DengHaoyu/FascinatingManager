@@ -48,7 +48,7 @@ public class ConnectionsRecyclerAdapter extends RecyclerView.Adapter<Connections
             public void onClick(View v) {
                 int position = holder.getAdapterPosition();
                 ConnectionItem conn = ConnectionsRecyclerAdapter.this.connections.get(position);
-                Intent intent = new Intent("denghaoyu.fascinationmanager.managedat");
+                Intent intent = new Intent("denghaoyu.fascinationmanager.managedatabase");
                 intent.putExtra("ConnectionItem",conn);
                 FMApplication.getContext().startActivity(intent);
             }

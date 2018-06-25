@@ -40,7 +40,13 @@
             android:name="science.denghaoyu.fascinatingmanager.ContactMeActivity"
             android:label="@string/title_activity_contact_me"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="science.denghaoyu.fascinatingmanager.ManageDatabaseActivity" />
+        <activity android:name="science.denghaoyu.fascinatingmanager.ManageDatabaseActivity" >
+            <intent-filter>
+                <action android:name="denghaoyu.fascinationmanager.managedatabase" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
 
         <meta-data
             android:name="android.support.VERSION"
