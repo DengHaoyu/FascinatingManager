@@ -94,19 +94,19 @@ public final class R {
         public static final int parent_matrix = 0x7f090091;
         public static final int right_icon = 0x7f09009c;
         public static final int right_side = 0x7f09009d;
-        public static final int save_image_matrix = 0x7f09009e;
-        public static final int save_non_transition_alpha = 0x7f09009f;
-        public static final int save_scale_type = 0x7f0900a0;
-        public static final int status_bar_latest_event_content = 0x7f0900c3;
-        public static final int text = 0x7f0900c7;
-        public static final int text2 = 0x7f0900c8;
-        public static final int time = 0x7f0900ce;
-        public static final int title = 0x7f0900cf;
-        public static final int transition_current_scene = 0x7f0900d6;
-        public static final int transition_layout_save = 0x7f0900d7;
-        public static final int transition_position = 0x7f0900d8;
-        public static final int transition_scene_layoutid_cache = 0x7f0900d9;
-        public static final int transition_transform = 0x7f0900da;
+        public static final int save_image_matrix = 0x7f09009f;
+        public static final int save_non_transition_alpha = 0x7f0900a0;
+        public static final int save_scale_type = 0x7f0900a1;
+        public static final int status_bar_latest_event_content = 0x7f0900c6;
+        public static final int text = 0x7f0900ca;
+        public static final int text2 = 0x7f0900cb;
+        public static final int time = 0x7f0900d2;
+        public static final int title = 0x7f0900d3;
+        public static final int transition_current_scene = 0x7f0900da;
+        public static final int transition_layout_save = 0x7f0900db;
+        public static final int transition_position = 0x7f0900dc;
+        public static final int transition_scene_layoutid_cache = 0x7f0900dd;
+        public static final int transition_transform = 0x7f0900de;
     }
     public static final class integer {
         public static final int cancel_button_image_alpha = 0x7f0a0004;
@@ -130,7 +130,7 @@ public final class R {
         public static final int notification_template_part_time = 0x7f0b0046;
     }
     public static final class string {
-        public static final int status_bar_notification_info_overflow = 0x7f0d0045;
+        public static final int status_bar_notification_info_overflow = 0x7f0d0046;
     }
     public static final class style {
         public static final int TextAppearance_Compat_Notification = 0x7f0e0103;

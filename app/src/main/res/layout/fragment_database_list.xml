@@ -17,7 +17,7 @@
         android:id="@+id/manage_database_tables_list_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:listitem="@layout/recyclerview_item_table_list">
+        tools:listitem="@layout/recyclerview_item_database_list">
 
     </android.support.v7.widget.RecyclerView>
 </FrameLayout>

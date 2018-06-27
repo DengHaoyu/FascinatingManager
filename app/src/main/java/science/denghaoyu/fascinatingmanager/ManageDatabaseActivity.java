@@ -11,7 +11,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import science.denghaoyu.fascinatingmanager.datastore.ConnectionItem;
-import science.denghaoyu.fascinatingmanager.fragments.TableListFragment;
+import science.denghaoyu.fascinatingmanager.fragments.DatabaseListFragment;
 
 public class ManageDatabaseActivity extends AppCompatActivity implements View.OnClickListener {
     private ConnectionItem item;
@@ -41,7 +41,7 @@ public class ManageDatabaseActivity extends AppCompatActivity implements View.On
     }
 
     private void table(){
-        Fragment table = new TableListFragment();
+        Fragment table = new DatabaseListFragment();
         Bundle args = new Bundle();
         args.putSerializable("Connection",item);
         table.setArguments(args);
@@ -55,6 +55,5 @@ public class ManageDatabaseActivity extends AppCompatActivity implements View.On
                 .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         transaction.addToBackStack(null);
         transaction.commit();
-//        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
     }
 }

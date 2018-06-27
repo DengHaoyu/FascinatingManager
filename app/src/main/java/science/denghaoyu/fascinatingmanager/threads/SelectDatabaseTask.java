@@ -1,6 +1,7 @@
 package science.denghaoyu.fascinatingmanager.threads;
 
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -19,23 +20,23 @@ import science.denghaoyu.fascinatingmanager.datastore.ConnectionItem;
 
 //TODO this class is used to select all tables from database
 
-public class SelectTablesTask extends AsyncTask<ConnectionItem,Void,List<String>> {
+public class SelectDatabaseTask extends AsyncTask<ConnectionItem,Void,List<String>> {
     @Override
     protected List<String> doInBackground(ConnectionItem... connectionItems) {
         ConnectionItem item = connectionItems[0];
         String url = "jdbc:mysql:" +
-                "//"+item.getAddress()+":"+item.getPort()+"/SCHEMATA";
+                "//"+item.getAddress()+":"+item.getPort()+"/information_schema";
         ArrayList<String> strings = new ArrayList<>();
 
         try {
             Connection connection = DriverManager.getConnection(url,item.getUser(),item.getPassword());
             Statement stmt = connection.createStatement();
-            ResultSet resultSet = stmt.executeQuery("select SCHEMA_NAME from table SCHEMATE where " + ";");
+            ResultSet resultSet = stmt.executeQuery("select SCHEMA_NAME from  SCHEMATA ;");
             while(resultSet.next()){
-                strings.add(resultSet.getString(2));
+                strings.add(resultSet.getString("SCHEMA_NAME"));
             }
         } catch (SQLException e) {
-            e.printStackTrace();
+            Log.e("STT",e.toString());
         }
         return strings;
     }

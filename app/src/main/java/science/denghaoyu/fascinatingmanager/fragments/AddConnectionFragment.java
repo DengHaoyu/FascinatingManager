@@ -20,6 +20,7 @@ import java.util.concurrent.ExecutionException;
 
 import science.denghaoyu.fascinatingmanager.FMApplication;
 import science.denghaoyu.fascinatingmanager.R;
+import science.denghaoyu.fascinatingmanager.application.GlobalVariables;
 import science.denghaoyu.fascinatingmanager.datastore.ConnectionItem;
 import science.denghaoyu.fascinatingmanager.threads.TestConnectionTask;
 
@@ -144,7 +145,8 @@ public class AddConnectionFragment extends Fragment {
             ConnectionItem item = getConnection();
             item.save();
             Toast.makeText(FMApplication.getContext(),"Save finished",Toast.LENGTH_SHORT).show();
-//            getActivity().onBackPressed();
+            GlobalVariables.fragments.remove("AddConnectionFragment");
+            getActivity().onBackPressed();
         }
     }
     private class FirstLetter implements TextWatcher{
@@ -158,9 +160,9 @@ public class AddConnectionFragment extends Fragment {
         public void afterTextChanged(Editable s) {
             if(!s.toString().equals("")){
                 if(s.toString().charAt(0)<=127)//ascii set
-                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0));
+                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0)+"");
                 else if(s.toString().length()>=2){
-                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0));
+                    AddConnectionFragment.this.firstLetter.setText(s.toString().charAt(0)+s.toString().charAt(1)+"asd");
                 }else{
                     AddConnectionFragment.this.firstLetter.setText("N/A");
                 }

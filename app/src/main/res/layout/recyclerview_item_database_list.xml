@@ -11,7 +11,7 @@
         app:srcCompat="@drawable/ic_table" />
 
     <TextView
-        android:id="@+id/recyclerview_table_list_table_name"
+        android:id="@+id/recyclerview_database_list_table_name"
         android:layout_width="0dp"
         android:layout_height="match_parent"
         android:layout_weight="6"

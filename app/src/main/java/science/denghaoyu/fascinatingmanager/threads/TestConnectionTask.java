@@ -24,7 +24,7 @@ public class TestConnectionTask extends AsyncTask<ConnectionItem,Void,Boolean> {
         try {
             Class.forName("com.mysql.jdbc.Driver").newInstance();
             Connection connection = DriverManager.getConnection(url,connectionItems[0].getUser(),connectionItems[0].getPassword());
-            if(connection.isValid(5000)){
+            if(connection.isValid(10000)){
                 return true;
             }else{
                 return false;

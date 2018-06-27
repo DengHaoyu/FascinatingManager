@@ -117,7 +117,7 @@ public class ConnectionsActivity extends AppCompatActivity
         FragmentTransaction transaction = manager.beginTransaction();
         transaction.replace(R.id.content_connections_layout,fragment)
                 .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
-//        transaction.addToBackStack(null);
+        transaction.addToBackStack(null);
         transaction.commit();
 
 //        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
