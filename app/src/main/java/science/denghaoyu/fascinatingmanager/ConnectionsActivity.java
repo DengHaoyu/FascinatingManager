@@ -19,16 +19,20 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import org.litepal.crud.DataSupport;
+
 import science.denghaoyu.fascinatingmanager.application.GlobalVariables;
+import science.denghaoyu.fascinatingmanager.datastore.Settings;
 import science.denghaoyu.fascinatingmanager.fragments.AddConnectionFragment;
 import science.denghaoyu.fascinatingmanager.fragments.ConnectionsFragment;
+import science.denghaoyu.fascinatingmanager.fragments.SettingFragment;
 
 import static science.denghaoyu.fascinatingmanager.R.id.content_connections_layout;
 
 public class ConnectionsActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
     private int selectedItem = 0;
-
+    public DrawerLayout drawer;//forgive my poor programming ability :-(
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +41,7 @@ public class ConnectionsActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
@@ -51,6 +55,9 @@ public class ConnectionsActivity extends AppCompatActivity
             GlobalVariables.fragments.put("ConnectionFragment",fragment);
         }
         addFragment(fragment);
+        if(DataSupport.findAll(Settings.class).isEmpty()){
+            new Settings().save();
+        }
     }
 
     @Override
@@ -61,6 +68,9 @@ public class ConnectionsActivity extends AppCompatActivity
             super.onBackPressed();
         } else {
             super.onBackPressed();
+        }
+        if(getSupportFragmentManager().getBackStackEntryCount()==0){
+            finish();
         }
     }
 
@@ -106,6 +116,9 @@ public class ConnectionsActivity extends AppCompatActivity
                 GlobalVariables.fragments.put("ConnectionFragment",fragment);
             }
             addFragment(fragment);
+        }else if(id == R.id.drawer_action_settings){
+            Fragment fragment = new SettingFragment();
+            addFragment(fragment);
         }
         //TODo
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -119,7 +132,5 @@ public class ConnectionsActivity extends AppCompatActivity
                 .setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
         transaction.addToBackStack(null);
         transaction.commit();
-
-//        transaction.setTransitionStyle(FragmentTransaction.TRANSIT_FRAGMENT_FADE);
     }
 }

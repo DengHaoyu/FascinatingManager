@@ -40,6 +40,6 @@
     <string name="No_table">No table found</string>
     <string name="rows_show_in_each_selection">Rows show ins each selection:</string>
     <string name="submit">Submit!</string>
-
+    <string name="time_out">time out:</string>
 </resources>
 

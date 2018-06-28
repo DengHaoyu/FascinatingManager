@@ -17,5 +17,5 @@
         android:layout_weight="6"
         android:text="test"
         android:textColor="@android:color/black"
-        android:textSize="50dp" />
+        android:textSize="25dp" />
 </LinearLayout>

@@ -3,6 +3,8 @@ package science.denghaoyu.fascinatingmanager.threads;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import org.litepal.crud.DataSupport;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
@@ -13,6 +15,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import science.denghaoyu.fascinatingmanager.datastore.ConnectionItem;
+import science.denghaoyu.fascinatingmanager.datastore.Settings;
 
 /**
  * Created by dhy on 18-3-24.
@@ -30,6 +33,9 @@ public class SelectDatabaseTask extends AsyncTask<ConnectionItem,Void,List<Strin
 
         try {
             Connection connection = DriverManager.getConnection(url,item.getUser(),item.getPassword());
+            if(!connection.isValid(DataSupport.findAll(Settings.class).get(0).getTimeOut())){
+                return strings;
+            }
             Statement stmt = connection.createStatement();
             ResultSet resultSet = stmt.executeQuery("select SCHEMA_NAME from  SCHEMATA ;");
             while(resultSet.next()){

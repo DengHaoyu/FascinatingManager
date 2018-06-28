@@ -12,6 +12,16 @@ public class Settings extends DataSupport implements Serializable{
     @Deprecated
     private int maxRowWhenSelect = 50;
     private int rowSelect = 50;
+    private int timeOut = 5000;
+
+    public int getTimeOut() {
+        return timeOut;
+    }
+
+    public void setTimeOut(int timeOut) {
+        this.timeOut = timeOut;
+    }
+
     public int getRowSelect() {
         return rowSelect;
     }

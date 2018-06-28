@@ -3,6 +3,7 @@ package science.denghaoyu.fascinatingmanager.fragments;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -52,9 +53,9 @@ public class DatabaseListFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.manage_database_tables_list_recyclerview);
         DatabaseListRecyclerViewAdapter adapter;
         if(!databases.isEmpty()) {
-
             adapter = new DatabaseListRecyclerViewAdapter(databases);
             recyclerView.setAdapter(adapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this.getContext()));
             Log.d("testasasdd","asdasd"+databases.get(0));
         }else{
             TextView tv = (TextView)view.findViewById(R.id.fragment_table_list_no_table_found);

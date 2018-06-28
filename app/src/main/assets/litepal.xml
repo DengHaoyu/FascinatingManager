@@ -5,4 +5,9 @@
     <list>
         <mapping class="science.denghaoyu.fascinatingmanager.datastore.ConnectionItem"/>
     </list>
+    <dbname value="Settings"></dbname>
+    <version value="1"/>
+    <list>
+        <mapping class="science.denghaoyu.fascinatingmanager.datastore.Settings"/>
+    </list>
 </litepal>
